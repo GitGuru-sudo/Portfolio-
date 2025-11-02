@@ -7,6 +7,29 @@
 
 My design portfolio to showcase a few projects. Built with [Remix](https://remix.run/), [Three.js](https://threejs.org/), and [Framer Motion](https://www.framer.com/motion/). View the [live site](https://hamishw.com) or check out a live version of the [components storybook](https://storybook.hamishw.com).
 
+## About Me
+
+Hi there! I'm **Saksham**, a passionate web developer pursuing my B.Tech at Amity University, Gurugram. I love building things for the web — from interactive interfaces to powerful backend systems.
+
+### My Expertise
+
+- **Backend Development**: Django, Django REST Framework, PostgreSQL, Supabase
+- **Frontend Development**: React, TypeScript, modern JavaScript
+- **Full-Stack Solutions**: End-to-end web application development
+- **Creative Experiences**: Interactive UI/UX with modern web technologies
+
+### Location
+
+📍 Gurugram, India
+
+### Connect With Me
+
+- **Email**: saksham73218@gmail.com
+- **GitHub**: [GitGuru-sudo](https://github.com/GitGuru-sudo)
+- **LinkedIn**: [Saksham Arora](https://www.linkedin.com/in/saksham-arora-bb4831329/)
+
+I'm always open to hearing about exciting opportunities and collaborations. Feel free to explore my projects below or reach out directly!
+
 ## Install & run
 
 Make sure you have nodejs `19.9.0` or higher and npm `9.6.3` or higher installed. Install dependencies with:

@@ -1,11 +1,13 @@
 {
-  "name": "Hamish Williams",
-  "role": "Designer",
-  "disciplines": ["Developer", "Prototyper", "Animator", "Illustrator", "Modder"],
-  "url": "https://hamishw.com",
-  "bluesky": "hamishw.com",
-  "figma": "@Hamish",
-  "github": "HamishMW",
-  "repo": "https://github.com/HamishMW/portfolio",
-  "ascii": "__  __  __\n\u005C \u005C \u005C \u005C \u005C\u2215\n \u005C \u005C\u2215\u005C \u005C\n  \u005C\u2215  \u005C\u2215\n"
+  "name": "Saksham",
+  "role": "Developer",
+  "disciplines": ["Django","REST API", "Backend", "Frontend"],
+  "url": "",
+  "email": "saksham73218@gmail.com",
+  "github": "GitGuru-sudo",
+  "linkedin": "https://www.linkedin.com/in/saksham-arora-bb4831329/",
+  "twitter": "",
+  "location": "Gurugram, India",
+  "repo": "https://github.com/GitGuru-sudo/portfolio",
+  "ascii": "   _____ \n  / ___/\n  \\__ \\ \n ___/ / \n/____/  \n"
 }

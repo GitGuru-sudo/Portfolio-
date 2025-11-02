@@ -1,0 +1,105 @@
+@layer components {
+  .pillNav {
+    display: flex;
+    align-items: center;
+    gap: var(--spaceXL);
+    padding: var(--spaceM) var(--spaceXL);
+    background: transparent;
+    position: fixed;
+    top: var(--spaceM);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: var(--zIndex4);
+    width: auto;
+    max-width: 90vw;
+
+    @media (--mediaMobile) {
+      gap: var(--spaceM);
+      padding: var(--spaceS) var(--spaceM);
+      top: var(--spaceS);
+    }
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    z-index: 2;
+  }
+
+  .logoImage {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+
+    @media (--mediaMobile) {
+      height: 32px;
+    }
+  }
+
+  .navItems {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: var(--spaceXS);
+    padding: var(--spaceXS);
+    background: color-mix(in lab, var(--base-color, #000000) 5%, transparent);
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    isolation: isolate;
+
+    @media (--mediaMobile) {
+      gap: 2px;
+      padding: 2px;
+    }
+  }
+
+  .pill {
+    position: absolute;
+    top: var(--spaceXS);
+    left: var(--spaceXS);
+    height: calc(100% - var(--spaceXS) * 2);
+    background: var(--pill-color, #ffffff);
+    border-radius: 50px;
+    z-index: 0;
+    pointer-events: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    @media (--mediaMobile) {
+      top: 2px;
+      left: 2px;
+      height: calc(100% - 4px);
+    }
+  }
+
+  .navItem {
+    position: relative;
+    padding: var(--spaceS) var(--spaceL);
+    font-size: calc((14 / 16) * 1rem);
+    font-weight: var(--fontWeightMedium);
+    color: var(--base-color, #000000);
+    text-decoration: none;
+    border-radius: 50px;
+    z-index: 1;
+    transition: color 0.3s ease;
+    white-space: nowrap;
+    cursor: pointer;
+    mix-blend-mode: normal;
+
+    @media (--mediaMobile) {
+      padding: var(--spaceXS) var(--spaceM);
+      font-size: calc((12 / 16) * 1rem);
+    }
+
+    &[data-active='true'],
+    &[data-hovered='true'] {
+      color: var(--pill-text-color, #000000);
+    }
+
+    &:hover {
+      color: var(--pill-text-color, #000000);
+    }
+  }
+}

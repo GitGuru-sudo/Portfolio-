@@ -16,7 +16,9 @@ import GothamMedium from '~/assets/fonts/gotham-medium.woff2';
 import { useEffect } from 'react';
 import { Error } from '~/layouts/error';
 import { VisuallyHidden } from '~/components/visually-hidden';
-import { Navbar } from '~/layouts/navbar';
+import { PillNav } from '~/components/pill-nav';
+import { Monogram } from '~/components/monogram';
+import { TargetCursor } from '~/components/target-cursor';
 import { Progress } from '~/components/progress';
 import config from '~/config.json';
 import styles from './root.module.css';
@@ -118,11 +120,32 @@ export default function App() {
       </head>
       <body data-theme={theme}>
         <ThemeProvider theme={theme} toggleTheme={toggleTheme}>
+          <TargetCursor 
+            targetSelector=".cursor-target, a, button, [role='button'], .project-card, .article-card"
+            spinDuration={2}
+            hideDefaultCursor={true}
+          />
           <Progress />
           <VisuallyHidden showOnFocus as="a" className={styles.skip} href="#main-content">
             Skip to main content
           </VisuallyHidden>
-          <Navbar />
+          <PillNav
+            logo={<Monogram highlight />}
+            logoAlt="Saksham, Developer"
+            items={[
+              { label: 'Projects', href: '/#project-1' },
+              { label: 'Details', href: '/#details' },
+              { label: 'Articles', href: '/articles' },
+              { label: 'Contact', href: '/contact' }
+            ]}
+            activeHref="/"
+            className="custom-nav"
+            ease="power2.easeOut"
+            baseColor="#000000"
+            pillColor="#ffffff"
+            hoveredPillTextColor="#ffffff"
+            pillTextColor="#000000"
+          />
           <main
             id="main-content"
             className={styles.container}

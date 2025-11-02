@@ -34,7 +34,7 @@ function ArticlesPost({ slug, frontmatter, timecode, index }) {
 
   return (
     <article
-      className={styles.post}
+      className={`${styles.post} cursor-target`}
       data-featured={!!featured}
       style={index !== undefined ? cssProps({ delay: index * 100 + 200 }) : undefined}
     >

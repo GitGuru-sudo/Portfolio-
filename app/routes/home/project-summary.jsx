@@ -176,7 +176,7 @@ export function ProjectSummary({
 
   return (
     <Section
-      className={styles.summary}
+      className={`${styles.summary} cursor-target`}
       data-alternate={alternate}
       data-first={index === 1}
       onFocus={() => setFocused(true)}

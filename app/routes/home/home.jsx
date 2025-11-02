@@ -41,8 +41,8 @@ export const links = () => {
 
 export const meta = () => {
   return baseMeta({
-    title: 'Designer + Developer',
-    description: `Design portfolio of ${config.name} — a product designer working on web & mobile apps with a focus on motion, experience design, and accessibility.`,
+    title: 'Developer',
+    description: `Portfolio of ${config.name} — a web developer specializing in Django, backend systems, and full-stack web applications. Building innovative solutions with modern technologies.`,
   });
 };
 
@@ -103,13 +103,13 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Designing the future of education"
-        description="Designing a platform to help educators build better online courseware"
-        buttonText="View project"
-        buttonLink="/projects/smart-sparrow"
+        title="Attendance Management System"
+        description="A comprehensive attendance tracking system built with Django for efficient student and staff management"
+        buttonText="View on GitHub"
+        buttonLink="https://github.com/GitGuru-sudo/Attendance_System-.git"
         model={{
           type: 'laptop',
-          alt: 'Smart Sparrow lesson builder',
+          alt: 'Attendance Management System interface',
           textures: [
             {
               srcSet: `${sprTexture} 1280w, ${sprTextureLarge} 2560w`,
@@ -124,13 +124,13 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Video game progress tracking"
-        description="Design and development for a video game tracking app built in React Native"
+        title="Techniki - Tech Community Platform"
+        description="A collaborative platform for tech enthusiasts to connect, share knowledge, and build together"
         buttonText="View website"
-        buttonLink="https://gamestack.hamishw.com"
+        buttonLink="https://www.techniki.club"
         model={{
           type: 'phone',
-          alt: 'App login screen',
+          alt: 'Techniki platform mobile view',
           textures: [
             {
               srcSet: `${gamestackTexture} 375w, ${gamestackTextureLarge} 750w`,
@@ -148,13 +148,13 @@ export const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="Biomedical image collaboration"
-        description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
-        buttonText="View project"
-        buttonLink="/projects/slice"
+        title="MedioGo - Healthcare Solution"
+        description="A healthcare management application designed to streamline medical services and patient care"
+        buttonText="View on GitHub"
+        buttonLink="https://github.com/GitGuru-sudo/mediogo.git"
         model={{
           type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
+          alt: 'MedioGo healthcare dashboard',
           textures: [
             {
               srcSet: `${sliceTexture} 800w, ${sliceTextureLarge} 1920w`,

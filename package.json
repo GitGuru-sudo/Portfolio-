@@ -11,7 +11,7 @@
     "dev": "node ./scripts/dev.cjs && remix vite:dev",
     "start": "wrangler pages dev ./build/client",
     "postinstall": "node ./scripts/draco.cjs",
-    "deploy": "npm run build && wrangler pages deploy ./build/client --project-name portfolio",
+    "deploy": "vercel --prod",
     "dev:storybook": "storybook dev -p 6006",
     "build:storybook": "storybook build",
     "deploy:storybook": "wrangler pages deploy ./storybook-static --project-name portfolio-storybook --branch main"
@@ -19,9 +19,9 @@
   "dependencies": {
     "@aws-sdk/client-ses": "^3.515.0",
     "@mdx-js/react": "^3.0.1",
-    "@remix-run/cloudflare": "^2.7.1",
-    "@remix-run/cloudflare-pages": "^2.7.1",
+    "@remix-run/node": "^2.17.2",
     "@remix-run/react": "^2.7.1",
+    "@remix-run/vercel": "^1.19.3",
     "framer-motion": "11.0.5",
     "gsap": "^3.13.0",
     "isbot": "^4.1.0",
@@ -65,6 +65,6 @@
     "wrangler": "^3.24.0"
   },
   "engines": {
-    "node": ">=19.9.0"
+    "node": ">=20.0.0"
   }
 }

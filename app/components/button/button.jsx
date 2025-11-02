@@ -17,7 +17,6 @@ export const Button = forwardRef(({ href, ...rest }, ref) => {
 
   return (
     <ButtonContent
-      unstable_viewTransition
       as={Link}
       prefetch="intent"
       to={href}
